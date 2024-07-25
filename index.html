@@ -9,15 +9,18 @@
 <body>
     <div class="container">
         <h1>CALCULATOR</h1>
-        <input type="text">
-        <h4 class="result">result</h4>
-        <p class="history">history</p>
+        <input type="text" id="display" readonly>
+        <h4 class="result">Result: <span id="result">0</span></h4>
+        <p class="history">History: <span id="history">0</span></p>
+        <p id="history"></p>
         <div class="inputs">
-            <div>+</div>
-            <div>-</div>
-            <div>*</div>
-            <div>/</div>
+            <div onclick="btnClick('+')">+</div>
+            <div onclick="btnClick('-')">-</div>
+            <div onclick="btnClick('*')">*</div>
+            <div onclick="btnClick('/')">/</div>
         </div>
     </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
